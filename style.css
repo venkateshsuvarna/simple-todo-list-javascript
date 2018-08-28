@@ -1,0 +1,52 @@
+*{
+	text-align: center;
+	border-radius: 5px;
+	font-family: sans-serif;
+}
+.closeButtonClass{
+	padding: 10px;
+	margin:5px;
+	background-color: #F2F2F2;
+	position: absolute;
+	vertical-align: middle;
+	right: 0;
+	top : 3px;
+}
+#addItemButton{
+	margin: 5px;
+	padding: 10px 10px;
+	background-color: #FF0000;
+	border: none;
+	color: #FFFFFF;
+	border-style: none;
+
+}
+input[type=text]{
+	width: 70%;
+	padding: 10px 10px;
+	margin: 5px;
+	box-sizing: border-box;
+	border: none;
+}
+#addItemDiv{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F2F2F2;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+ul{
+	list-style-type: none;
+	width: 70%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #FF0000;
+}
+ul li{
+	margin-bottom:10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #FFFFFF;
+	position: relative;
+}

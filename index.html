@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Simple To-Do list</title>
+	<script type="text/javascript">
+		
+		function addItem(){
+			var itemName = document.getElementById('todoInput').value; //Get the value of the input text field
+			var ul = document.getElementById('unorderedList'); // Get the outer ul element
+			var li = document.createElement("li");
+			li.appendChild(document.createTextNode(itemName));
+			var closeButton = document.createElement("button");
+			closeButton.innerHTML = "Remove";
+			closeButton.classList.add("closeButtonClass");
+			li.appendChild(closeButton);
+			ul.appendChild(li);
+
+			closeButton.onclick = function(){
+				ul.removeChild(li);
+			};
+
+		}
+
+	</script>
+</head>
+<body>
+<div id="headerDiv">
+	<h2>This is a simple To-Do List</h2>
+</div>
+<div id="addItemDiv">
+	<input type="text" name="todoInput" id="todoInput" placeholder="Add To-Do item">
+	<button type="submit" id="addItemButton" name="submit" onclick="addItem()">Add Item</button>
+</div>
+
+<div id="itemsListDiv">
+	<ul id="unorderedList"></ul>
+</div>
+
+</body>
+</html>
